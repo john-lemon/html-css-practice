@@ -1,0 +1,33 @@
+.card {
+  position: relative;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+
+  &__img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  &__title {
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  &__price {
+    text-align: center;
+  }
+
+  &__price-old {
+    color: #AEB5B9;
+    text-decoration: line-through;
+  }
+
+  &__sale {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    background-image: url('./img/sale.png');
+    background-size: cover;
+  }
+}

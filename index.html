@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>HTML и CSS</title>
+        <link rel="stylesheet" href="./styles/styles.less" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <a href="/">
+                <img src="./styles/blocks/header/img/hh.svg" alt="Logo">
+            </a>
+            <nav>
+                <ul class="header__nav">
+                    <li class="header__nav-item">
+                        <button
+                            class="header__nav-button header__nav-button_search" aria-label="Поиск">
+                        </button>
+                    </li>
+                    <li class="header__nav-item">
+                        <button
+                        class="header__nav-button header__nav-button_profile" aria-label="Профиль">
+                        </button>
+                    </li>
+                    <li class="header__nav-item">
+                        <button
+                        class="header__nav-button header__nav-button_menu" aria-label="Меню">
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="content">
+            <h2 class="title title-h2">Популярные товары</h2>
+            <div class="catalog">
+                <div class="card">
+                    <img
+                        src="./images/product-1.jpg"
+                        alt="Зонт"
+                        class="card__img">
+                    <div class="card__title title title-h4">
+                        Зонт
+                    </div>
+                    <div class="card__price">
+                        1 990 ₽
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__sale"></div>
+                    <img
+                        src="./images/product-2.jpg"
+                        alt="Зонт"
+                        class="card__img">
+                    <div class="card__title title title-h4">
+                        Сумка
+                    </div>
+                    <div class="card__price">
+                        <span class="card__price-old">
+                            500
+                        </span>
+                        290 ₽
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__sale"></div>
+                    <img
+                        src="./images/product-2.jpg"
+                        alt="Зонт"
+                        class="card__img">
+                    <div class="card__title title title-h4">
+                        Сумка
+                    </div>
+                    <div class="card__price">
+                        <span class="card__price-old">
+                            500
+                        </span>
+                        290 ₽
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__sale"></div>
+                    <img
+                        src="./images/product-2.jpg"
+                        alt="Зонт"
+                        class="card__img">
+                    <div class="card__title title title-h4">
+                        Сумка
+                    </div>
+                    <div class="card__price">
+                        <span class="card__price-old">
+                            500
+                        </span>
+                        290 ₽
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="js/grid.js"></script>
+    </body>
+</html>
