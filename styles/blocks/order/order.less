@@ -1,0 +1,69 @@
+.order {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+  padding: 0 16px;
+  box-sizing: border-box;
+  display: none;
+}
+
+.input {
+  height: 38px;
+  width: 100%;
+  border: 1px solid #DFDEDD;
+  padding: 0 10px;
+  box-sizing: border-box;
+
+  &:focus {
+    border-color: #0F8FEE;
+    outline: none;
+  }
+}
+
+.form-item {
+  margin-bottom: 20px;
+}
+
+.form-delivery {
+  height: 38px;
+  width: 100%;
+  border: 1px solid #EEEEEE;
+  display: flex;
+}
+
+.delivery-radio {
+  display: none;
+}
+
+.delivery-radio:checked + .delivery-label{
+  background-color: #DFDEDD;
+}
+
+.delivery-label {
+  display: block;
+  width: 50%;
+  text-align: center;
+  line-height: 38px;
+}
+
+.order-select {
+  box-sizing: border-box;
+  height: 38px;
+  border: 1px solid #C5C9CA;
+  border-radius: 2px;
+  padding: 0 calc(28px + 9px) 0 9px;
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  background-image: url('/assets/arrow.svg'), linear-gradient(to right, #C5C9CA 1px, transparent 1px);
+  background-size: 28px auto;
+  width: 100%;
+}
+
+.order-select:focus {
+  border-color: #0F8FEE;
+  outline: none;
+}

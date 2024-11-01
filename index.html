@@ -14,7 +14,25 @@
             <a href="/">
                 <img src="./styles/blocks/header/img/hh.svg" alt="Logo">
             </a>
-            <nav>
+            <nav class="menu-desktop">
+                <a href="" class="menu-desktop-link">
+                    Одежда
+                </a>
+                <a href="" class="menu-desktop-link">
+                    Сумки
+                </a>
+                <a href="" class="menu-desktop-link">
+                    Аксессуары
+                </a>
+                <a href="" class="menu-desktop-link">
+                    Офисные принадлежности
+                </a>
+            </nav>
+            <div class="menu-desktop-buttons">
+                <button class="button-search"></button>
+                <button class="button-sigin">Войти</button>
+            </div>
+            <nav class="menu-mobile">
                 <ul class="header__nav">
                     <li class="header__nav-item">
                         <button
@@ -23,12 +41,12 @@
                     </li>
                     <li class="header__nav-item">
                         <button
-                        class="header__nav-button header__nav-button_profile" aria-label="Профиль">
+                            class="header__nav-button header__nav-button_profile" aria-label="Профиль">
                         </button>
                     </li>
                     <li class="header__nav-item">
                         <button
-                        class="header__nav-button header__nav-button_menu" aria-label="Меню">
+                            class="header__nav-button header__nav-button_menu" aria-label="Меню">
                         </button>
                     </li>
                 </ul>
@@ -101,6 +119,61 @@
                 </div>
             </div>
         </section>
+
+        <div class="order">
+            <form>
+                <h2 class="title title-h2">Оформление заказа</h2>
+                <input type="text" class="input form-item" placeholder="ФИО" name="fio" autocomplete="off">
+
+                <input type="email" class="input form-item" placeholder="Электронная почта" name="email" autocomplete="off">
+
+                <div class="form-item">
+                    <div class="form-delivery">
+                        <input
+                            type="radio"
+                            name="delivery"
+                            id="delivery-pickup"
+                            class="delivery-radio"
+                        >
+                        <label
+                            class="delivery-label"
+                            for="delivery-pickup"
+                        >
+                            Самовывоз
+                        </label>
+                        <input
+                            type="radio"
+                            name="delivery"
+                            id="delivery-delivery"
+                            class="delivery-radio"
+                        >
+                        <label
+                            class="delivery-label" for="delivery-delivery"
+                        >
+                            Доставка
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-item">
+                    <select name="" id="" class="order-select">
+                        <option value="77">Москва</option>
+                        <option value="78">Санкт-Петербург</option>
+                        <option value="116">Казань</option>
+                    </select>
+                </div>
+
+                <div class="form-item">
+                    <div>
+                        <input type="checkbox" name="sms" id="order-sms">
+                        <label for="order-sms">Хочу получать смс уведомления</label>
+                    </div>
+                    <input type="checkbox" name="sms" id="order-sms-no">
+                    <label for="order-sms-no">Не хочу получать смс уведомления</label>
+                </div>
+            </form>
+        </div>
+
         <script src="js/grid.js"></script>
     </body>
 </html>

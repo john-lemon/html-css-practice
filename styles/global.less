@@ -1,6 +1,17 @@
+
+@min-width: 768px;
+
+@gt-m: ~'(min-width: @{min-width})';
+
+
+:root {
+    --min-width: 768px;
+    --text-color: #333333;
+}
+
 body {
     font: 14px/1.2 Arial, sans-serif;
-    color: #333;
+    color: var(--text-color);
 }
 
 .content {
